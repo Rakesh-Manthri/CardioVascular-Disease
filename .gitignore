@@ -1,2 +1,35 @@
-/.venv
+# Environments
+/.venv/
+.env
+env/
+venv/
+ENV/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Temporary and batch processing files
+temp_*
+*.tmp
+*.log
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution & Build
+dist/
+build/
+*.egg-info/
 /zip
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini

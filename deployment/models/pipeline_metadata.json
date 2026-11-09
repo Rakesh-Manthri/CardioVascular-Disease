@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "created_at": "2026-11-09",
+  "target_definition": {
+    "stage1": "Binary CAD Detection (<50% stenosis vs >=50% stenosis)",
+    "stage2": "3-Tier Clinical Care Staging (Tier 0: No CAD, Tier 1: Medical, Tier 2: Surgical)"
+  },
+  "decision_threshold": 0.39103417774861515,
+  "metrics_test": {
+    "stage1_accuracy_calibrated": 0.8197,
+    "stage1_sensitivity_calibrated": 0.9286,
+    "stage1_roc_auc": 0.9318,
+    "stage2_accuracy": 0.6885,
+    "stage2_f1_weighted": 0.7071
+  },
+  "input_schema": {
+    "age": {
+      "type": "float",
+      "min": 20.0,
+      "max": 90.0,
+      "desc": "Age in years"
+    },
+    "sex": {
+      "type": "int",
+      "values": [
+        0,
+        1
+      ],
+      "desc": "1 = Male, 0 = Female"
+    },
+    "cp": {
+      "type": "int",
+      "values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "desc": "Chest pain type (1=Typical, 2=Atypical, 3=Non-anginal, 4=Asymptomatic)"
+    },
+    "trestbps": {
+      "type": "float",
+      "min": 80.0,
+      "max": 250.0,
+      "desc": "Resting blood pressure in mm Hg"
+    },
+    "chol": {
+      "type": "float",
+      "min": 100.0,
+      "max": 600.0,
+      "desc": "Serum cholesterol in mg/dl"
+    },
+    "fbs": {
+      "type": "int",
+      "values": [
+        0,
+        1
+      ],
+      "desc": "Fasting blood sugar > 120 mg/dl (1=True, 0=False)"
+    },
+    "restecg": {
+      "type": "int",
+      "values": [
+        0,
+        1,
+        2
+      ],
+      "desc": "Resting ECG (0=Normal, 1=ST-T abnormality, 2=LV hypertrophy)"
+    },
+    "thalach": {
+      "type": "float",
+      "min": 60.0,
+      "max": 230.0,
+      "desc": "Maximum heart rate achieved"
+    },
+    "exang": {
+      "type": "int",
+      "values": [
+        0,
+        1
+      ],
+      "desc": "Exercise-induced angina (1=Yes, 0=No)"
+    },
+    "oldpeak": {
+      "type": "float",
+      "min": 0.0,
+      "max": 8.0,
+      "desc": "ST depression induced by exercise relative to rest"
+    },
+    "slope": {
+      "type": "int",
+      "values": [
+        1,
+        2,
+        3
+      ],
+      "desc": "Slope of peak exercise ST segment (1=Upsloping, 2=Flat, 3=Downsloping)"
+    },
+    "ca": {
+      "type": "float",
+      "min": 0.0,
+      "max": 3.0,
+      "desc": "Number of major vessels (0-3) colored by fluoroscopy"
+    },
+    "thal": {
+      "type": "int",
+      "values": [
+        3,
+        6,
+        7
+      ],
+      "desc": "Thallium scintigraphy (3=Normal, 6=Fixed defect, 7=Reversible defect)"
+    }
+  }
+}
