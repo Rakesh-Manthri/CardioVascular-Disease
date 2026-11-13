@@ -1,0 +1,23 @@
+# Core Scientific & Data Processing
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+
+# Machine Learning & Modeling
+scikit-learn==1.9.1
+imbalanced-learn==0.14.2
+joblib==1.6.0
+
+# Visualization & Plotting
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# Interactive Frontend & Dashboard
+streamlit==1.67.0
+
+# PDF Report Generation
+reportlab==5.1.0
+
+# Jupyter Notebook Execution Environment
+ipykernel==7.3.0
+ipython==9.17.1
